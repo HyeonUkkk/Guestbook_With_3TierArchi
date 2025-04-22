@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>방명록</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>방명록</h1>
+  <form action="/entry" method="POST">
+    <input type="text" name="name" placeholder="이름" required />
+    <textarea name="message" placeholder="메시지" required></textarea>
+    <button type="submit">작성</button>
+  </form>
+  <hr />
+  <% entries.forEach(entry => { %>
+    <div class="entry">
+      <strong><%= entry.name %></strong> <em>(<%= entry.createdAt.toLocaleString() %>)</em>
+      <p><%= entry.message %></p>
+    </div>
+  <% }) %>
+</body>
+</html>

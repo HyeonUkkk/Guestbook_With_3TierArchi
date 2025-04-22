@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .entry {
+    border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+  }
+  
